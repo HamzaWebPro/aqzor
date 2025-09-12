@@ -3,3 +3,7 @@
 @theme {
   --container-container: 1280px;
 }
+
+.swiper-wrapper {
+  padding-bottom: 25px !important;
+}
