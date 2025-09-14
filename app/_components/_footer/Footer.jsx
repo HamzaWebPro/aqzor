@@ -1,3 +1,4 @@
+
 import React from "react";
 import Container from "../_container/Container";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
@@ -6,7 +7,7 @@ import byteliberty from "../../images/byteliberty.png";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#222] text-white overflow-hidden">
+    <footer id="contact" className="relative bg-[#222] text-white overflow-hidden">
       {/* Decorative shapes */}
       <div className="absolute top-[-50px] left-[-50px] w-[150px] h-[150px] bg-pink-500/20 rounded-full blur-2xl" />
       <div className="absolute bottom-[-70px] right-[-70px] w-[200px] h-[200px] bg-blue-500/20 rounded-full blur-3xl" />

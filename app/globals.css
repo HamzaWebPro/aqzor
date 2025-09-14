@@ -7,3 +7,6 @@
 .swiper-wrapper {
   padding-bottom: 25px !important;
 }
+html {
+  scroll-behavior: smooth;
+}

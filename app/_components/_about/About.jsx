@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="relative py-[50px] md:py-[60px] lg:py-[90px] bg-gradient-to-r from-gray-50 via-gray-100 to-gray-200 overflow-hidden">
+    <section id="about" className="relative py-[50px] md:py-[60px] lg:py-[90px] bg-gradient-to-r from-gray-50 via-gray-100 to-gray-200 overflow-hidden">
       {/* Background Shapes - more visible */}
       <div className="absolute top-10 left-0 w-[250px] h-[250px] bg-pink-200 rounded-full blur-2xl opacity-60 "></div>
       <div className="absolute bottom-10 right-0 w-[300px] h-[300px] bg-pink-200  rounded-full blur-2xl opacity-60 "></div>
@@ -62,7 +62,7 @@ const About = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

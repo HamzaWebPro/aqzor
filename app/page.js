@@ -5,6 +5,7 @@ import Banner from "./_banner/Banner";
 import ProductSlider from "./_components/_product-slider/ProductSlider";
 import About from "./_components/_about/About";
 import Footer from "./_components/_footer/Footer";
+import Faq from "./_faq/Faq";
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <Banner />
       <ProductSlider />
       <About />
+      <Faq/>
       <Footer/>
     </>
   );

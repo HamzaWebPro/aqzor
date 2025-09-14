@@ -80,7 +80,7 @@ const ProductSlider = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   return (
-    <div className="py-[50px] md:py-[60px] lg:py-[90px] bg-white">
+    <section id="products" className="py-[50px] md:py-[60px] lg:py-[90px] bg-white">
       <Container>
         {/* Heading Section */}
         <div className="text-center mb-10">
@@ -209,7 +209,7 @@ const ProductSlider = () => {
           opacity: 1;
         }
       `}</style>
-    </div>
+    </section>
   );
 };
 
