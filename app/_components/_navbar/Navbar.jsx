@@ -83,21 +83,24 @@ let [navScroll, setNavScroll] = useState(false);
 
       {/* Mobile Bottom Drawer */}
       <div
-        className={`fixed inset-x-0 bottom-0 bg-white shadow-2xl rounded-t-2xl transform transition-transform duration-300 z-[99999999] ${
+        className={`fixed inset-x-0 bottom-0 bg-[#222] text-white shadow-2xl rounded-t-2xl transform transition-transform duration-300 z-[99999999] ${
           mobileOpen ? "translate-y-0" : "translate-y-full"
         }`}
       >
+          <div className="absolute top-[-50px] left-[-50px] w-[150px] h-[150px] bg-pink-500/20 rounded-full blur-2xl" />
+      <div className="absolute bottom-[-70px] right-[-70px] w-[200px] h-[200px] bg-blue-500/20 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/3 w-[120px] h-[120px] bg-yellow-500/20 rounded-full blur-2xl hidden md:block" />
         {/* Header with Close */}
         <div className="flex justify-between items-center p-4 border-b">
           <span className="font-semibold text-lg">Menu</span>
           <X
-            className="w-7 h-7 text-gray-700 cursor-pointer"
+            className="w-7 h-7 text-white cursor-pointer"
             onClick={handleClose}
           />
         </div>
 
         {/* Nav Items */}
-        <div className="flex flex-col space-y-6 p-6 text-lg font-medium text-gray-800">
+        <div className="flex flex-col space-y-6 p-6 text-lg font-medium text-white">
           {navItems.map((item) => (
             <a
               href={item.href}
@@ -111,9 +114,9 @@ let [navScroll, setNavScroll] = useState(false);
 
         {/* Social Icons */}
         <div className="flex justify-center space-x-6 p-6 border-t">
-          <Facebook className="w-6 h-6 text-gray-600 hover:text-blue-600 cursor-pointer transition" />
-          <Instagram className="w-6 h-6 text-gray-600 hover:text-pink-500 cursor-pointer transition" />
-          <MessageCircle className="w-6 h-6 text-gray-600 hover:text-green-500 cursor-pointer transition" />
+          <Facebook className="w-6 h-6 text-white hover:text-blue-600 cursor-pointer transition" />
+          <Instagram className="w-6 h-6 text-white hover:text-pink-500 cursor-pointer transition" />
+          <MessageCircle className="w-6 h-6 text-white hover:text-green-500 cursor-pointer transition" />
         </div>
       </div>
     </div>

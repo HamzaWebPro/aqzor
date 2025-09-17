@@ -42,7 +42,8 @@ const faqs = [
 ];
 
 const Faq = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  // First one open by default
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const toggleFaq = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -51,7 +52,7 @@ const Faq = () => {
   return (
     <section
       id="faq"
-      className="relative py-[50px] md:py-[60px] lg:py-[90px] bg-gradient-to-r  overflow-hidden"
+      className="relative py-[50px] md:py-[60px] lg:py-[90px] bg-gradient-to-r overflow-hidden"
     >
       {/* Background Shapes */}
 
@@ -86,11 +87,11 @@ const Faq = () => {
                 />
               </button>
               <div
-                className={`px-6 pb-4 text-gray-600 transition-all duration-500 overflow-hidden ${
-                  activeIndex === index ? "max-h-40" : "max-h-0"
+                className={`px-6 pb-2  text-gray-600 transition-all duration-500 overflow-hidden ${
+                  activeIndex === index ? "max-h-[500px]" : "max-h-0"
                 }`}
               >
-                {faq.answer}
+                <p className="pt-2">{faq.answer}</p>
               </div>
             </div>
           ))}
